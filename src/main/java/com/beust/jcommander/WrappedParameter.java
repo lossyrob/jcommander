@@ -34,6 +34,10 @@ public class WrappedParameter {
     return m_parameter != null ? m_parameter.hidden() : m_dynamicParameter.hidden();
   }
 
+  public boolean showdefault() {
+    return m_parameter != null ? m_parameter.showdefault() : m_dynamicParameter.showdefault();
+  }
+
   public boolean required() {
     return m_parameter != null ? m_parameter.required() : m_dynamicParameter.required();
   }

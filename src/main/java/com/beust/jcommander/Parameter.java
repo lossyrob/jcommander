@@ -88,6 +88,11 @@ public @interface Parameter {
   boolean hidden() default false;
 
   /**
+   * If true, show default value for this parameter in usage().
+   */
+  boolean showdefault() default true;
+
+  /**
    * Validate the parameter found on the command line.
    */
   Class<? extends IParameterValidator> validateWith() default NoValidator.class;

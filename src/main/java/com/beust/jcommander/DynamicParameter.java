@@ -37,6 +37,12 @@ public @interface DynamicParameter {
   boolean hidden() default false;
 
   /**
+   * If true, prints the default value in the usage().
+   */
+
+  boolean showdefault() default true;
+
+  /**
    * The validation class to use.
    */
   Class<? extends IParameterValidator> validateWith() default NoValidator.class;

@@ -1065,7 +1065,6 @@ public class JCommander {
       }
     }
 
-    //
     // Sort the options
     //
     Collections.sort(sorted, getParameterDescriptionComparator());
@@ -1091,7 +1090,7 @@ public class JCommander {
                 + "key" + parameter.getAssignment()
                 + "value");
       }
-      if (def != null) {
+      if (def != null && parameter.showdefault()) {
         String displayedDef = Strings.isStringEmpty(def.toString())
             ? "<empty string>"
             : def.toString();
